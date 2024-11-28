@@ -55,14 +55,11 @@ This assignment will guide you in creating a clickable image link using HTML. Yo
 
 ## Tips
 
-- Use high-quality, relevant images hosted online or stored locally in your project folder.
-- Add meaningful alt text for accessibility and better user experience.
-- Use inline or external CSS for advanced styling.
+- Make sure the image URL is correct and accessible (you can use an image hosted online or save a local image in your project folder).
+- Use descriptive alt text for better accessibility and SEO.
+- Ensure your file is saved with the `.md` extension.
 
----
+## Example in Action
 
-### Example Output
-
-The page will display an image of a Nikon D5100 camera. When clicked, it opens the **Photography Blog** in a new tab.
-
-Feel free to customize the content, link, and image to align with your hobby!
+```markdown
+[![Photography](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Nikon_D5100.jpg/800px-Nikon_D5100.jpg)](https://www.photographyblog.com)
