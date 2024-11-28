@@ -1,0 +1,28 @@
+.subscribe-button {
+    background-color: #f00;
+    color: #fff;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+
+.subscribe-button:hover {
+    background-color: #c00;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+.subscribe-button:active {
+    background-color: #900;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    transform: scale(.98);
+}
+

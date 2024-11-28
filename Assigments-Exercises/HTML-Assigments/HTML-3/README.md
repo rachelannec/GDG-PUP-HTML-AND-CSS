@@ -2,44 +2,67 @@
 
 ## Overview
 
-This assignment will guide you in creating a clickable image link using Markdown. You will learn how to insert an image related to your hobby and make it clickable, linking to an external website with more information.
+This assignment will guide you in creating a clickable image link using HTML. You will learn how to insert an image related to your hobby and make it clickable, linking to an external website with more information.
+
+---
 
 ## Instructions
 
 1. **Open Your Code Editor**:
    - Use a code editor like Visual Studio Code.
 
-2. **Create a New File**:
-   - Create a new file and save it as `README.md`.
+2. **Create a New HTML File**:
+   - Create a new file and save it as `hobby.html`.
 
-3. **Write the Markdown for a Clickable Image Link**:
-   - Copy and paste the following Markdown code into `README.md`:
+3. **Write the HTML Code for a Clickable Image Link**:
+   - Copy and paste the following HTML code into your file:
 
-     ```markdown
-     [![My Hobby](https://example.com/hobby-image.jpg)](https://example.com/more-info)
+     ```html
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Clickable Image Link</title>
+     </head>
+     <body>
+         <h1>My Hobby: Photography</h1>
+         <p>Click the image below to learn more about photography:</p>
+         <a href="https://www.photographyblog.com" target="_blank">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Nikon_D5100.jpg/800px-Nikon_D5100.jpg" 
+                  alt="Nikon D5100 Camera" 
+                  style="width:400px; height:auto; border:1px solid #000;">
+         </a>
+     </body>
+     </html>
      ```
 
 4. **Explanation**:
-   - `[![Alt Text](image_url)](target_link)`: The syntax for creating a clickable image link in Markdown.
-   - `Alt Text`: Describes the image for accessibility purposes.
-   - `image_url`: The path or URL of the image you want to display.
-   - `target_link`: The URL that the user will be directed to when they click on the image.
-   - The above example displays an image with the alt text "My Hobby" and links to `https://example.com/more-info` when clicked.
+   - `<a href="URL">`: Creates a hyperlink. The `href` attribute specifies the link's target URL.
+   - `<img src="image_url" alt="text">`: Embeds the image. The `src` attribute is the path to the image file, and the `alt` text provides a description for accessibility.
+   - `style`: Inline CSS to style the image, including width, height, and border for better presentation.
+   - `target="_blank"`: Ensures the link opens in a new tab.
 
 5. **Save Your File**:
-   - Save `README.md` to ensure your code is saved properly.
+   - Save the file as `hobby.html`.
 
-6. **Preview the Markdown File**:
-   - Open the Markdown preview in your editor (in VSCode, use `Ctrl+Shift+V` or right-click the file and select "Open Preview").
-   - Verify that the image displays correctly and is clickable, redirecting you to the specified website.
+6. **Preview Your HTML File**:
+   - Open the file in a browser to verify:
+     - The image displays properly.
+     - Clicking the image redirects you to the external website.
+
+---
 
 ## Tips
 
-- Make sure the image URL is correct and accessible (you can use an image hosted online or save a local image in your project folder).
-- Use descriptive alt text for better accessibility and SEO.
-- Ensure your file is saved with the `.md` extension.
+- Use high-quality, relevant images hosted online or stored locally in your project folder.
+- Add meaningful alt text for accessibility and better user experience.
+- Use inline or external CSS for advanced styling.
 
-## Example in Action
+---
 
-```markdown
-[![Photography](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Nikon_D5100.jpg/800px-Nikon_D5100.jpg)](https://www.photographyblog.com)
+### Example Output
+
+The page will display an image of a Nikon D5100 camera. When clicked, it opens the **Photography Blog** in a new tab.
+
+Feel free to customize the content, link, and image to align with your hobby!
