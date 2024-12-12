@@ -392,19 +392,20 @@ footer {
   padding: 15px;
 }
 
-/* Step 29: Footer Heading Styles */
+/* Step 29: Footer Heading Styles 
 .footer-content h4 {
-  /* margin-bottom: ; 
-    color: ; */
-}
+  / margin-bottom: ; 
+    color: ; 
 
-/* Step 30: Footer Paragraph Styles */
+
+/* Step 30: Footer Paragraph Styles 
 .footer p {
-  /* font-size: ; */
+  / font-size: ; /
 }
 
 .footer p:last-child {
-  /* margin-top: ; 
-    color: ; */
+  / margin-top: ; 
+    color: ; 
+    
 }
-
+*/
