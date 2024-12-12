@@ -66,6 +66,9 @@ header {
 }
 
 /* Step 8: Navigation Links Container Styles */
+.nav-links-container {
+  margin-right: 30px;
+}
 .nav-links-container > ul {
   display: flex;
   justify-content: space-between;
@@ -79,7 +82,7 @@ header {
   margin: 0; 
   padding: 0; 
   overflow: hidden;
-  margin-right: 50px;
+  gap: 30px;
 }
 
 /* Step 9: Navigation Link Styles */
@@ -97,6 +100,11 @@ header {
   display: flex;
   text-align: center;
   list-style-type: none;
+}
+
+.nav-links-container a::after {
+  color: #fff;
+  transition: all 0.3s;
 }
 
 /* Step 10: Navigation Link Hover Styles */
@@ -137,14 +145,26 @@ header {
 
 /* Main Section */
 /* Step 14: Main Content Container Styles */
-main {
-  display: flex; 
-  justify-content: space-between;
 
+.container {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
   gap: 15px; 
-  max-width: 1200px; 
-  margin: 0 0 0 20px; 
+  width: auto; 
+  margin: 0; 
   padding: 0;
+  justify-content: center;
+}
+
+main article {
+  max-width: 1000px;
 }
 
 /* Step 15: Blog Post Container Styles */
@@ -152,7 +172,6 @@ main {
   display: flex; 
   flex: 1;
   flex-direction: column; 
-  width: 1000px;
 }
 
 /* Step 16: Individual Blog Post Styles */
@@ -166,9 +185,9 @@ main {
   overflow: hidden; 
   box-shadow: 0 4px 8px rgb(211, 211, 211, 0.2);
   /* gap: 30px; */
-  margin: 30px 30px 0;
+  margin-top: 30px;
   /* padding: 20px; */
-  width: 1000px;
+  max-width: 1000px;
   height: fit-content;
 }
 
@@ -198,21 +217,21 @@ main {
   padding: 10px;
 }
 
-.blog-post div h2 {
+.blog-post .post-content h2 {
   font-size: 24px;
   color: #4285f4;
-  margin-bottom: 10px;
+  /* margin: 10px; */
 }
 
-.blog-post div span {
+.blog-post .post-content .meta {
   font-size: 14px;
   color: #777;
-  margin-bottom: 10px;
+  margin: 20px 0;
 }
 
-.blog-post div p {
+.blog-post .post-content .caption {
   font-size: 16px;
-  margin-bottom: 50px;
+  margin: 10px 0;
 }
 
 
@@ -221,14 +240,11 @@ main {
 
 /* Sidebar Styling */
 /* Step 21: Sidebar Container Styles */
-aside {
+.aside {
   display: flex;
-  float: right;
   flex-direction: column;
-  align-items: flex-start;
-  /* flex: flex-shrink;  */
   max-width: 400px;
-  margin: 0 20px;
+  margin: 0;
 }
 
 .side-bar {
@@ -241,7 +257,7 @@ aside {
   overflow: hidden; 
   box-shadow: 0 4px 8px rgb(211, 211, 211, 0.2);
   /* gap: 30px; */
-  margin: 30px 30px 0;
+  margin-top: 30px;
   /* padding: 20px; */
   /* height: fit-content; */
 }
@@ -275,6 +291,11 @@ aside {
   justify-content: space-between;
   background-color: #777;
   margin: 0;
+}
+
+.social-logo {
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-side img {
@@ -387,48 +408,3 @@ footer {
     color: ; */
 }
 
-/* Responsive Design */
-/* Step 31: Responsive Navbar Styles */
-@media (max-width: 768px) {
-  .navbar--container {
-    /* flex-direction: ; 
-      text-align: ; */
-  }
-
-  .nav-links-container {
-    /* flex-direction: ; 
-      gap: ; */
-  }
-
-  .header-banner-container h1 {
-    /* font-size: ; */
-  }
-
-  .header-banner-container p {
-    /* font-size: ; */
-  }
-
-  .main {
-    /* flex-direction: ; */
-  }
-
-  .main-posts article {
-    /* flex-direction: ; 
-      align-items: ; 
-      text-align: ; */
-  }
-
-  .main-posts article img {
-    /* width: ; 
-      height: ; */
-  }
-
-  .main-posts p {
-    /* font-size: ; */
-  }
-
-  .footer-content {
-    /* flex-direction: ; 
-      text-align: ; */
-  }
-}

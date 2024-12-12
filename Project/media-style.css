@@ -1,0 +1,107 @@
+/* Responsive Design */
+/* Step 31: Responsive Navbar Styles */
+@media (max-width: 768px) {
+  header{
+    width: 100%;  
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-container {
+    height: max-content;
+    padding-bottom: 10px;
+  }
+
+  .navbar {
+    flex-direction: column; 
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  .nav-links-container {
+    margin: 0 0 20px;
+  }
+  .nav-links-container > ul {
+    flex-direction: column; 
+    gap: 10px;
+    float: center;
+  }
+  .logo-container {
+    margin: 10px;
+  }
+  .logo-container img {
+    display: none;
+  }
+
+  .header-banner-container {
+    border-radius: 10px;
+  }
+
+  .header-banner-container h1 {
+    font-size: 28px;
+  }
+
+  .header-banner-container p {
+    font-size: 16px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 768px;
+  }
+
+
+
+  .blog-post {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    max-width: 350px;
+  }
+
+  .blog-post img{
+    min-width: 350px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .aside {
+    float: initial;
+    max-width: 350px;
+
+  }
+
+  .social-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #777;
+    margin: 0;
+  }
+
+  .social-side img {
+    max-width: 30px; 
+    height: 30px; 
+    object-fit: cover;
+    margin: 10px;
+  }
+
+  .main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
