@@ -148,15 +148,14 @@ header {
 
 .container {
   display: flex; 
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 main {
   display: flex;
-  flex: 1;
   flex-direction: row;
-  gap: 15px; 
+  gap: 20px; 
   width: auto; 
   margin: 0; 
   padding: 0;
@@ -164,7 +163,7 @@ main {
 }
 
 main article {
-  max-width: 1000px;
+  max-width: 1100px;
 }
 
 /* Step 15: Blog Post Container Styles */
@@ -207,8 +206,8 @@ main article {
 
 /* Step 17: Blog Post Image Styles */
 .blog-post img{
-  max-width: 150px; 
-  height: 150px; 
+  max-width: 200px; 
+  height: 200px; 
   object-fit: cover;
 }
 
